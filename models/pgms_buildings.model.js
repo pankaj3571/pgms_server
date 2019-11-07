@@ -3,7 +3,8 @@ const Schema=mongoose.Schema;
 
 const AddBuidling=new Schema({
       
-        building_num:Number,
+        building_num:Number
+        
        
 })
 module.exports=mongoose.model('pgms_building',AddBuidling)
