@@ -5,7 +5,7 @@ const cors=require('cors')
 const app=express();
 app.use(cors())
 const routes = require('./routes/route')
-mongoose.connect('mongodb://127.0.0.1:27017/pgms',{useNewUrlParser: true,useCreateIndex: true,}).then(()=>{
+mongoose.connect('mongodb+srv://paul_0007:paul@123@demo-jmfsh.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true}).then(()=>{
     console.log('connected to database')
 }).catch((err)=>{
     console.log('error',err)
